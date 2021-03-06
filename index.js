@@ -16,7 +16,7 @@ app.get('/products/:id', (req, res) => {
 
 app.get('/images', async (req, res) => {
 	axios
-		.get('http://localhost:3003/bundle.js')
+		.get('http://184.72.22.149:3003/bundle.js')
 		.then((bundle) => {
 			res.send(bundle.data);
 		})
@@ -40,7 +40,7 @@ app.get('/description', async (req, res) => {
 
 app.get('/reviews', async (req, res) => {
 	axios
-		.get('http://18.144.61.129:3001/bundle.js')
+		.get('http://18.191.145.140:3001/bundle.js')
 		.then((bundle) => {
 			res.send(bundle.data);
 		})
