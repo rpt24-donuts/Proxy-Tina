@@ -28,7 +28,7 @@ app.get('/images', async (req, res) => {
 
 app.get('/description', async (req, res) => {
 	axios
-		.get('http://18.222.237.222:3002/bundle.js')
+		.get('http://3.139.104.53:3002/bundle.js')
 		.then((bundle) => {
 			res.send(bundle.data);
 		})
